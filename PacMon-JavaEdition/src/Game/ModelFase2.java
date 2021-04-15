@@ -9,8 +9,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class Model extends JPanel implements ActionListener {
-		
+public class ModelFase2 extends JPanel implements ActionListener {
+
 	private Dimension d;
     private final Font smallFont = new Font("Arial", Font.BOLD, 14);
     private boolean inGame = false;
@@ -60,20 +60,13 @@ public class Model extends JPanel implements ActionListener {
 
     
     
-    public Model(int score) {
-		super();
-		this.score = score;
-	}
-
-
-	public Model() {
+    public ModelFase2() {
 
         loadImages();
         initVariables();
         addKeyListener(new TAdapter());
         setFocusable(true);
         initGame();
-        
     }
     
     
@@ -117,14 +110,7 @@ public class Model extends JPanel implements ActionListener {
         }
     }
 
-    
-    
-    public int getScore() {
-		return score;
-	}
-
-
-	private void showIntroScreen(Graphics2D g2d) {
+    private void showIntroScreen(Graphics2D g2d) {
  
     	String start = "Para iniciar: ESPAÇO";
         g2d.setColor(new Color(255,255,255));
@@ -272,9 +258,7 @@ public class Model extends JPanel implements ActionListener {
                 screenData[pos] = (short) (ch & 15);
                 score++;
             }
-            
-            
-                      
+
             if (req_dx != 0 || req_dy != 0) {
                 if (!((req_dx == -1 && req_dy == 0 && (ch & 1) != 0)
                         || (req_dx == 1 && req_dy == 0 && (ch & 4) != 0)
@@ -298,10 +282,7 @@ public class Model extends JPanel implements ActionListener {
         pacman_y = pacman_y + PACMAN_SPEED * pacmand_y;
     }
 
-  
-
-
-	private void drawPacman(Graphics2D g2d) {
+    private void drawPacman(Graphics2D g2d) {
 
         if (req_dx == -1) {
         	g2d.drawImage(left, pacman_x + 1, pacman_y + 1, this);
@@ -375,11 +356,6 @@ public class Model extends JPanel implements ActionListener {
 
         continueLevel();
     }
-    
-    private void levelDois() {
-    	add(new ModelFase2());
-    	
-    }
 
     private void continueLevel() {
 
@@ -417,7 +393,7 @@ public class Model extends JPanel implements ActionListener {
 
         Graphics2D g2d = (Graphics2D) g;
 
-        g2d.setColor(new Color(65,195,71));
+        g2d.setColor(new Color(25,140,255));
         g2d.fillRect(0, 0, d.width, d.height);
 
         drawMaze(g2d);
