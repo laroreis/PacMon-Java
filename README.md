@@ -16,7 +16,7 @@
   
   ## 📄 Sobre o Projeto
 <p align="center"> 
-	 Jogo feito em Java, baseado no clasico PacMan, nessa versão o personagem Pikachu entra nesse aventura e se perde do Ash, e você (jogador) é um treinador temporario que precisa ajuda-lo a Localizar o Ash, e ele o ajuda a passar pelos ginasios e ganhar uma insignia de cada elemento.
+	 Jogo feito em Java, baseado no clássico PacMan, nessa nova versão o personagem Pikachu entra nessa aventura e se perde do Ash, e você (jogadore) é um treinadore temporario que precisa ajuda-lo a Localizar o Ash, e ele o ajuda a passar pelos ginasios e ganhar uma insignia de cada elemento.
 </p>
 
 ## ⚙️ Funcionalidades
@@ -40,7 +40,7 @@ Este projeto é divido em duas partes:
 
 ## 🗣️ Linguagem
 
-Feito totalmente com [Java](https://www.java.com/pt-BR/)
+Feito totalmente com [Java](https://www.java.com/pt-BR/) aplicando lógica de programação e P.O.O.
 
 ## 🧑‍🤝‍🧑 Equipe
 
