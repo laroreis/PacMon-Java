@@ -23,7 +23,8 @@
 
 - Movimentos do PiKachu
 ![Se movimenta para esquerda](https://user-images.githubusercontent.com/79121527/114784399-96a15780-9d51-11eb-8931-c15a9af8fa42.png)
-
+- Se o Pikachu encostar no Golen ele perde uma vida.
+- Ganha quando come todas as bolinhas brancas.
 
 ## 🎨 Layout
 
